@@ -48,13 +48,13 @@ In the project folder `other/sql/scripts`, you'll find the SQL queries used to g
 
 Below there's a quick guide on how to do it using DBeaver: 
 
-### DBeaver - Setting up the schema and tables
+#### Setting up the schema and tables using DBeaver:
 
-#### Installation and Opening DBeaver
+#### 1. Installation and Opening DBeaver
 1. Download and install DBeaver from [here](https://dbeaver.io/download/).
 2. Open DBeaver after installation.
 
-#### Establishing a Connection
+#### 2. Establishing a Connection
 1. Click the plug icon or select **Database > New Connection** to set up a new Postgres connection.
 2. In the connection settings dialog, input the following details:
 
@@ -68,7 +68,7 @@ Below there's a quick guide on how to do it using DBeaver:
 
 3. Click **Finish** to establish the connection.
 
-#### Executing SQL Scripts
+#### 3. Executing SQL Scripts
 1. Once connected, right-click the database icon and select **SQL Editor > Open SQL Script**.
 2. Copy and paste the queries from the DDL file present in `airflow_project/other/sql_scripts/tables_and_schema_ddl.sql`.
 3. Execute the queries one by one to set up your schema and tables.
@@ -114,7 +114,7 @@ volumes:
 ### Database and tables configuration
 The database is configured with its timezone set to UTC by default, a specific schema for the data we'll work on, and control columns such as `created_at` and `updated_at` to check the datetime information of data input and modifications.
 
-### 2. Custom python modules
+### Custom python modules
 The project is designed for scalability and code reusability, utilizing object-oriented programming concepts.
 
 A directory is created to store three modules: extract, transform, and load. The names aim to clearly convey the purpose of each module.
