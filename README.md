@@ -43,9 +43,40 @@ In the project folder `other/sql/scripts`, you'll find the SQL queries used to g
 </div>
 
 ### 3. Configure the database tables
-- To configure the database, you have two options:
-  - Execute the Python script located at `airflow/other/python_codes/set_up_postgres_db.py`
-  - Execute the SQL query located at `airflow/other/sql_scripts/tables_and_schema_ddl.sql` using a SQL client like DBeaver. You can always refer to the `docker-compose.yaml` file to check the database credentials.
+- To configure the database, you need to execute the SQL query located at `airflow/other/sql_scripts/tables_and_schema_ddl.sql` using a SQL client like DBeaver. You can always refer to the `docker-compose.yaml` file to check the database credentials.
+
+
+Below there's a quick guide on how to do it using DBeaver: 
+
+### DBeaver - Setting up the schema and tables
+
+#### Installation and Opening DBeaver
+1. Download and install DBeaver from [here](https://dbeaver.io/download/).
+2. Open DBeaver after installation.
+
+#### Establishing a Connection
+1. Click the plug icon or select **Database > New Connection** to set up a new Postgres connection.
+2. In the connection settings dialog, input the following details:
+
+   | Field         | Value         |
+   |---------------|---------------|
+   | **Host**      | localhost     |
+   | **Port**      | 5433          |
+   | **Database**  | postgres      |
+   | **Username**  | app_user      |
+   | **Password**  | app_password  |
+
+3. Click **Finish** to establish the connection.
+
+#### Executing SQL Scripts
+1. Once connected, right-click the database icon and select **SQL Editor > Open SQL Script**.
+2. Load your DDL file containing the SQL queries.
+3. Execute the queries one by one to set up your schema and tables.
+
+#### Troubleshooting Tips
+- If you encounter issues, first check the error messages for hints on what might be wrong.
+- Ensure that your database service in `docker-compose.yaml` is active and running.
+- Verify that all credentials and connection settings are correct and match those of the `docker-compose.yaml` file.
 
 ## Project Overview
 
