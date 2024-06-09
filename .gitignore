@@ -1,0 +1,21 @@
+# Ignore the logs directory
+logs/
+
+# Ignore all .env files
+*.env
+
+# Ignore node_modules directory if using Node.js
+node_modules/
+
+# Ignore the bin directory if using Python virtualenv
+bin/
+lib/
+include/
+pyvenv.cfg
+*.pyc
+
+# Ignore specific file extensions
+*~
+
+# Ignore Docker compose override files
+docker-compose.override.yml
