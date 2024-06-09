@@ -49,7 +49,7 @@ In the project folder `other/sql/scripts`, you'll find the SQL queries used to g
 
 ## Project Overview
 
-### Services used in the `docker-compose.yml` file
+### Services used in the `docker-compose.yaml` file
 To implement the services, I used the official template of Airflow 2.9.1 (stable version) available at [Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/2.9.1/docker-compose.yaml). More information can be found [here](https://airflow.apache.org/docs/apache-airflow/2.9.1/).
 
 The only change made to the template was the addition of a separate PostgreSQL database. This ensures we do not use the same PostgreSQL server that Airflow uses, preventing interference between Airflow and our separate solution (the database to store World Bank data), providing more safety and scalability.
