@@ -43,7 +43,7 @@ In the project folder `other/sql/scripts`, you'll find the SQL queries used to g
 </div>
 
 ### 3. Configure the database tables
-- To configure the database, you need to execute the SQL query located at `airflow/other/sql_scripts/tables_and_schema_ddl.sql` using a SQL client like DBeaver. You can always refer to the `docker-compose.yaml` file to check the database credentials.
+- To configure the database, you need to execute the SQL query located at `airflow_project/other/sql_scripts/tables_and_schema_ddl.sql` using a SQL client like DBeaver. You can always refer to the `docker-compose.yaml` file to check the database credentials.
 
 
 Below there's a quick guide on how to do it using DBeaver: 
@@ -70,7 +70,7 @@ Below there's a quick guide on how to do it using DBeaver:
 
 #### Executing SQL Scripts
 1. Once connected, right-click the database icon and select **SQL Editor > Open SQL Script**.
-2. Load your DDL file containing the SQL queries.
+2. Copy and paste the queries from the DDL file present in `airflow_project/other/sql_scripts/tables_and_schema_ddl.sql`.
 3. Execute the queries one by one to set up your schema and tables.
 
 #### Troubleshooting Tips
