@@ -37,7 +37,7 @@ In the project folder `other/sql/scripts`, you'll find the SQL queries used to g
 | **Host**            | host.docker.internal     |
 | **Database**        | postgres                 |
 | **Login**           | app_user                 |
-| **Password**        | your_password            |
+| **Password**        | app_password             |
 | **Port**            | 5433                     |
 
 </div>
