@@ -1,3 +1,4 @@
+-- Query to generate pivoted report
 SELECT
     country.id,
     country.name,

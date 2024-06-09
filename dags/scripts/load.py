@@ -3,6 +3,7 @@ import logging
 
 logger = logging.getLogger('airflow.task')
 
+# A class for managing current and future data insertions in databases
 class SQLExecutor:
     def __init__(self, conn_id):
         self.conn_id = conn_id

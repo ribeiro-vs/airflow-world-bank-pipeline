@@ -1,6 +1,6 @@
 import psycopg2
 
-# Function to connect to the database
+# Function to connect to the database and set up tables, schema, and timezone
 def connect_and_query():
     try:
         # Connection settings

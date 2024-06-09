@@ -2,6 +2,7 @@ import logging
 
 logger = logging.getLogger('airflow.task')
 
+# Transformantion functions
 def transform_gdp_country_data(response,**kwargs):
     data = response
     # Extracting relevant information and removing duplicates when necessary
