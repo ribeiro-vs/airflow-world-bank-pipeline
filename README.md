@@ -98,4 +98,4 @@ If you have any questions or suggestions about the project, feel free to reach o
 - **Name:** Vinicius RIbeiro
 - **Email:** [ribeiro.vr20@gmail.com](mailto:ribeiro.vr20@gmail.com)
 - **LinkedIn:** [vinicius-ribeiro1](https://www.linkedin.com/in/vinicius-ribeiro1/)
-- **GitHub:** [Personal Account](https://github.com/your-profile), [Work Account](https://github.com/your-profile)
+- **GitHub:** [Personal Account](https://github.com/ribeiro-vs), [Work Account](https://github.com/viniciusribeir0)
